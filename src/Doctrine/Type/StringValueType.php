@@ -22,7 +22,7 @@ class StringValueType extends Type
 
     public function convertToDatabaseValue($value, AbstractPlatform $platform): ?string
     {
-        return $value instanceof StringValue ? $value->getValue() : null;
+        return $value instanceof StringValue ? $value->value : null;
     }
 
     public function getName(): string
