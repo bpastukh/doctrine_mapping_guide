@@ -4,7 +4,7 @@ namespace App\ValueObject;
 
 use InvalidArgumentException;
 
-class ProductPrice
+final readonly class ProductPrice
 {
     private int $value;
 
