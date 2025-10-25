@@ -21,7 +21,8 @@ final class RichProductController extends AbstractController
         return $this->json([
             'id' => $product->getId(),
             'name' => $product->getName()->value,
-            'price' => $product->getPrice()->getValue()
+            'price' => $product->getPrice()->getValue(),
+            'description' => $product->getDescription()->value,
         ]);
     }
 }
